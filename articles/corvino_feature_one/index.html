@@ -1,0 +1,261 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <title>Agape</title>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=EB+Garamond:wght@400;700&display=swap"
+    />
+    <style>
+        :root {
+            --background-color: #faf7f2;
+            --text-color: #1a1218;
+            --primary-accent: #4a2060;
+            --highlight: #c9982a;
+        }
+        body {
+            font-family: "EB Garamond", serif;
+            color: var(--text-color);
+            background: var(--background-color);
+        }
+        h1 {
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h4 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h5 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        nav {
+            text-align: right;
+            margin-bottom: 0rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            margin-right: 2rem;
+            font-size: 14pt;
+            word-spacing: 1rem;
+        }
+
+        a {
+            color: var(--text-color);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--highlight);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 0;
+            column-gap: 3px;
+            row-gap: 0;
+            background-color: black;
+            align-items: stretch;
+        }
+        .container div {
+            padding: 10px;
+            background-color: var(--background-color);
+        }
+        .feature_header {
+            text-align: center;
+        }
+        .feature_image {
+            width: 50%;
+            max-width: 700px;
+            height: auto;
+        }
+        .article_image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+        .thought_experiment {
+            text-align: center;
+            margin-right: 25%;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+        }
+        .thought_experiment_header {
+            font-size: 32pt;
+        }
+        .masthead {
+            text-align: center;
+        }
+        .masthead_header {
+            font-size: 64pt;
+            padding-bottom: 10px;
+        }
+        .masthead_rule {
+            border-color: var(--highlight);
+        }
+        .byline {
+            font-weight: bold;
+        }
+        .section_label {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 12pt;
+            color: var(--primary-accent);
+        }
+        .article_title {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        .section_header {
+            font-size: 16pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--primary-accent);
+            margin: 0;
+        }
+        .article_header {
+            font-size: 32pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        .article_author {
+            font-size: 12pt;
+            font-weight: bold;
+        }
+        .article_date {
+            font-size: 10pt;
+        }
+        .article_header_image {
+            margin-top: 2rem;
+            max-height: 600px;
+            width: auto;
+        }
+        .article_header_image_accreditation {
+            display: block;
+            color: #666666;
+            margin-top: 4px;
+        }
+        .article_body {
+            font-size: 16pt;
+            line-height: 1.5;
+            margin-top: 4rem;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .article_body p:first-of-type::first-letter {
+            font-weight: bold;
+            float: left;
+            font-size: 64pt;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">home</a>
+            <a href="#">archives</a>
+            <a href="#">about</a>
+        </nav>
+        <div class="masthead">
+            <h1 class="masthead_header"><i>agape</i></h1>
+            <h3>a magazine of ethics</h3>
+            <hr class="masthead_rule" />
+        </div>
+    </header>
+    <div class="masthead">
+        <p class="section_header">Feature</p>
+        <p class="article_header">
+            Are we living up to our Founders' ideals? And should we?
+        </p>
+        <p class="article_author">By Evan Corvino</p>
+        <p class="article_date">December 7th, 1941</p>
+        <img
+            class="article_header_image"
+            src="Scene_at_the_Signing_of_the_Constitution_of_the_United_States.jpg"
+        />
+        <p class="article_header_image_accreditation">
+            <i>Scene at the Signing of the Constitution of the United States</i>
+            by Howard Chandler Christy
+        </p>
+    </div>
+    <div class="article_body">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            auctor rutrum iaculis. Suspendisse et arcu et dolor porta varius.
+            Duis id pharetra odio. Nam ac sodales ligula. Maecenas consequat
+            pharetra felis vitae ornare. Aenean accumsan leo in est laoreet
+            posuere. Fusce nec dictum enim. Nulla eget posuere odio, non euismod
+            arcu. Curabitur hendrerit libero in velit ultricies luctus. Integer
+            arcu nunc, aliquet a faucibus vel, lobortis et lectus. Suspendisse
+            potenti. Nulla in maximus ipsum. Sed malesuada posuere est, in
+            pulvinar ex cursus efficitur. Pellentesque purus turpis, ultrices
+            eget tortor eu, mollis consequat nibh. Nullam nec odio in urna
+            ultrices feugiat.
+        </p>
+
+        <p>
+            In in neque porta, egestas metus vel, hendrerit augue. Sed volutpat
+            laoreet quam non volutpat. Sed lobortis arcu et enim commodo
+            malesuada. Quisque condimentum eros a justo mattis pretium. Aenean
+            auctor imperdiet risus. Donec aliquet eros urna, non fermentum
+            tortor elementum ac. Phasellus gravida non nisl eget tempus.
+            Pellentesque consectetur purus at dui pellentesque tristique. In
+            finibus fermentum mi eu tincidunt. Praesent non nisi eu elit dapibus
+            egestas vulputate vel quam. Pellentesque enim tellus, posuere at
+            ipsum lobortis, congue condimentum libero. Integer tempus at ligula
+            convallis ultricies. Fusce ac volutpat risus.
+        </p>
+
+        <p>
+            Sed a fringilla nisl, eu laoreet est. Sed sed tempor sapien. Sed
+            laoreet nibh eu ornare fringilla. Praesent bibendum semper dui vel
+            iaculis. Proin eget bibendum leo. Interdum et malesuada fames ac
+            ante ipsum primis in faucibus. Duis quam enim, interdum at porttitor
+            vitae, convallis non tortor. Vivamus ut odio quis nibh tristique
+            cursus pellentesque non purus.
+        </p>
+
+        <p>
+            Etiam ornare cursus hendrerit. Cras et mauris vitae nulla rhoncus
+            eleifend. Duis sit amet porta turpis. Donec vel venenatis metus.
+            Donec pharetra ut tortor at venenatis. Pellentesque enim libero,
+            imperdiet vitae vehicula in, facilisis vitae nulla. Pellentesque
+            commodo varius massa, tempor fermentum velit dictum id. Sed finibus
+            nulla id aliquam finibus. Vivamus at mi feugiat leo maximus pulvinar
+            aliquam ac ligula. In sed turpis fringilla, consequat turpis in,
+            tincidunt nisl. Etiam maximus laoreet urna vel tincidunt. Cras
+            efficitur nisl sapien, in vulputate orci ultrices non. Sed finibus
+            sem nec lectus rhoncus, ut ultrices nisi pulvinar. Nulla ultrices
+            fermentum mi et convallis.
+        </p>
+
+        <p>
+            Nam vitae dui a justo interdum malesuada euismod consectetur diam.
+            Vestibulum tincidunt odio vitae pellentesque convallis. Integer sit
+            amet tincidunt purus. In tempor turpis neque, non mollis est pretium
+            nec. Proin nec feugiat augue. Integer sed purus volutpat, congue
+            nisi eget, feugiat diam. Aliquam congue justo id ex tempus, eu
+            varius urna gravida. In porta dictum tellus placerat rutrum. Donec
+            posuere lorem eu justo porta dignissim. Nulla nibh velit, malesuada
+            ut elit ac, porttitor semper diam. Duis quis tincidunt augue,
+            accumsan accumsan mauris. In ante massa, lacinia id dignissim in,
+            pellentesque vel felis. In tempus sollicitudin consectetur.
+        </p>
+    </div>
+</body>
