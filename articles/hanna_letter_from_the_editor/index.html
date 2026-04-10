@@ -1,0 +1,257 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <title>Agape</title>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=EB+Garamond:wght@400;700&display=swap"
+    />
+    <style>
+        :root {
+            --background-color: #faf7f2;
+            --text-color: #1a1218;
+            --primary-accent: #4a2060;
+            --highlight: #c9982a;
+        }
+        body {
+            font-family: "EB Garamond", serif;
+            color: var(--text-color);
+            background: var(--background-color);
+        }
+        h1 {
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h4 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h5 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        nav {
+            text-align: right;
+            margin-bottom: 0rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            margin-right: 2rem;
+            font-size: 14pt;
+            word-spacing: 1rem;
+        }
+
+        a {
+            color: var(--text-color);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--highlight);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 0;
+            column-gap: 3px;
+            row-gap: 0;
+            background-color: black;
+            align-items: stretch;
+        }
+        .container div {
+            padding: 10px;
+            background-color: var(--background-color);
+        }
+        .feature_header {
+            text-align: center;
+        }
+        .feature_image {
+            width: 50%;
+            max-width: 700px;
+            height: auto;
+        }
+        .article_image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+        .thought_experiment {
+            text-align: center;
+            margin-right: 25%;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+        }
+        .thought_experiment_header {
+            font-size: 32pt;
+        }
+        .masthead {
+            text-align: center;
+        }
+        .masthead_header {
+            font-size: 64pt;
+            padding-bottom: 10px;
+        }
+        .masthead_rule {
+            border-color: var(--highlight);
+        }
+        .byline {
+            font-weight: bold;
+        }
+        .section_label {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 12pt;
+            color: var(--primary-accent);
+        }
+        .article_title {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        .section_header {
+            font-size: 16pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--primary-accent);
+            margin: 0;
+        }
+        .article_header {
+            font-size: 32pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        .article_author {
+            font-size: 12pt;
+            font-weight: bold;
+        }
+        .article_date {
+            font-size: 10pt;
+        }
+        .article_header_image {
+            margin-top: 2rem;
+            max-height: 600px;
+            width: auto;
+        }
+        .article_header_image_accreditation {
+            display: block;
+            color: #666666;
+            margin-top: 4px;
+        }
+        .article_body {
+            font-size: 16pt;
+            line-height: 1.5;
+            margin-top: 4rem;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .article_body p:first-of-type::first-letter {
+            font-weight: bold;
+            float: left;
+            font-size: 64pt;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">home</a>
+            <a href="#">archives</a>
+            <a href="#">about</a>
+        </nav>
+        <div class="masthead">
+            <h1 class="masthead_header"><i>agape</i></h1>
+            <h3>a magazine of ethics</h3>
+            <hr class="masthead_rule" />
+        </div>
+    </header>
+    <div class="masthead">
+        <p class="section_header">Special: Letter from the Editor</p>
+        <p class="article_header">The Fire Behind the Eyes</p>
+        <p class="article_author">By Cole Hanna</p>
+        <p class="article_date">December 7th, 1941</p>
+        <img class="article_header_image" src="260937.jpg" />
+        <p class="article_header_image_accreditation">
+            <i>Freedom of Speech</i> by Norman Rockwell
+        </p>
+    </div>
+    <div class="article_body">
+        <p>
+            In Matthew 18:20, we are told, “For where two or three are gathered
+            together in my name, there am I in the midst of them.” In Matthew
+            10:35–37, we are told, “For I have come to set a man against his
+            father, a daughter against her mother, and a daughter-in-law against
+            her mother-in-law; and one’s enemies will be those of his
+            household.” Abraham Lincoln, in an address given at the Illinois
+            State Capitol in 1858, quoted Mark 3:25: “A house divided against
+            itself, cannot stand.”
+        </p>
+        <p>
+            It is trite and tired to say that, in today’s society, we are
+            farther apart and thinner between each other than almost ever
+            before. What binds us together as a society, in the grandiloquent
+            words of Thomas Jefferson, is that, “We hold these truths to be
+            self-evident, that all men are created equal.” Just as Frederick
+            Douglass condemned the Fourth of July for its hypocritical
+            celebration as “the mournful wail of millions” cried out, we cannot
+            say that we are living up to the expectations of our forebears: in
+            our lethargy, we have failed to make ambition “counteract ambition”
+            (James Madison, Federalist No. 51). Those who speak the truth—like
+            Jesus Christ, like Socrates—often end up on the wrong side of
+            death’s thin, flowing veil. And today, it is often harsh truths that
+            tear us apart, much like Christ predicted his commandments would.
+        </p>
+        <p>
+            It is less trite and tired to offer real solutions to these
+            problems; to refer not to the failures of society’s attempts at
+            dialogue, but to envision potential successes. In our first meeting,
+            I asked whether we high school students felt that civil, genuine,
+            and open dialogue was sorely missing in our society: as far as I
+            could see, every hand in that room was raised.
+        </p>
+        <p>
+            In that first meeting, I saw the great potential, the fire behind
+            the eyes of every student to find out what is right. In debating
+            complex topics, like the limits of the First Amendment and the moral
+            arc of history, students maintained their composure and offered each
+            other grace.
+        </p>
+        <p>
+            This magazine intends to deliver these conversations to a wider
+            audience; not only to prove that real dialogue is possible, but to
+            show what it looks like. We will cover current events from an
+            ethical perspective, combining sophisticated moral argumentation
+            with rigorous fact-checking; we will discuss moral, ethical,
+            political, and legal topics with a specific focus on presenting
+            diverse viewpoints; we will survey the boundaries of faith and
+            reason, and attempt to find a proper balance between practical and
+            divine truth; and we will interview figures inside and outside our
+            school community to try to find some common ground beneath our
+            slipping feet.
+        </p>
+        <p>This magazine tries to find that footing together.</p>
+        <p>
+            If you’d like to discuss contributing or would like information
+            about meeting dates and locations, reach out to Editor-in-Chief and
+            Co-Captain Cole Hanna at cole.hanna@student.camdencatholic.org.
+        </p>
+        <p>
+            Whether you’re drawn to philosophy, law, medicine, or are simply
+            curious about the perspectives of your peers, you’re in the right
+            place.
+        </p>
+    </div>
+</body>
