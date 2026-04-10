@@ -1,0 +1,425 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <title>Agape</title>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=EB+Garamond:wght@400;700&display=swap"
+    />
+    <style>
+        :root {
+            --background-color: #faf7f2;
+            --text-color: #1a1218;
+            --primary-accent: #4a2060;
+            --highlight: #c9982a;
+        }
+        body {
+            font-family: "EB Garamond", serif;
+            color: var(--text-color);
+            background: var(--background-color);
+        }
+        h1 {
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h4 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        h5 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        nav {
+            text-align: right;
+            margin-bottom: 0rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            margin-right: 2rem;
+            font-size: 14pt;
+            word-spacing: 1rem;
+        }
+
+        a {
+            color: var(--text-color);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--highlight);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 0;
+            column-gap: 3px;
+            row-gap: 0;
+            background-color: black;
+            align-items: stretch;
+        }
+        .container div {
+            padding: 10px;
+            background-color: var(--background-color);
+        }
+        .feature_header {
+            text-align: center;
+        }
+        .feature_image {
+            width: 50%;
+            max-width: 700px;
+            height: auto;
+        }
+        .article_image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+        .thought_experiment {
+            text-align: center;
+            margin-right: 25%;
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+        }
+        .thought_experiment_header {
+            font-size: 32pt;
+        }
+        .masthead {
+            text-align: center;
+        }
+        .masthead_header {
+            font-size: 64pt;
+            padding-bottom: 10px;
+        }
+        .masthead_rule {
+            border-color: var(--highlight);
+        }
+        .byline {
+            font-weight: bold;
+        }
+        .section_label {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 12pt;
+            color: var(--primary-accent);
+        }
+        .article_title {
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        .section_header {
+            font-size: 16pt;
+            font-style: italic;
+            font-weight: bold;
+            color: var(--primary-accent);
+            margin: 0;
+        }
+        .article_header {
+            font-size: 32pt;
+            font-weight: bold;
+            margin: 0;
+        }
+        .article_author {
+            font-size: 12pt;
+            font-weight: bold;
+        }
+        .article_date {
+            font-size: 10pt;
+        }
+        .article_header_image {
+            margin-top: 2rem;
+            max-height: 600px;
+            width: auto;
+        }
+        .article_header_image_accreditation {
+            display: block;
+            color: #666666;
+            margin-top: 4px;
+        }
+        .article_body {
+            font-size: 16pt;
+            line-height: 1.5;
+            margin-top: 4rem;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .article_body p:first-of-type::first-letter {
+            font-weight: bold;
+            float: left;
+            font-size: 64pt;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">home</a>
+            <a href="#">archives</a>
+            <a href="#">about</a>
+        </nav>
+        <div class="masthead">
+            <h1 class="masthead_header"><i>agape</i></h1>
+            <h3>a magazine of ethics</h3>
+            <hr class="masthead_rule" />
+        </div>
+    </header>
+    <div class="masthead">
+        <p class="section_header">Feature</p>
+        <p class="article_header">
+            When Consciences Collide: <i>Burwell v. Hobby Lobby</i> and
+            Religious Coercion
+        </p>
+        <p class="article_author">By Cole Hanna</p>
+        <p class="article_date">December 7th, 1941</p>
+        <img
+            class="article_header_image"
+            src="Samuel_Alito_official_photo.jpg"
+        />
+        <p class="article_header_image_accreditation">
+            Official 2007 portrait of U.S. Supreme Court Associate Justice
+            Samuel Alito; Justice Alito wrote the Court's majority opinion in
+            <i>Hobby Lobby</i>
+        </p>
+    </div>
+    <div class="article_body">
+        <p>
+            Is it wrong not to say the Pledge of Allegiance? Does not each of us
+            owe some allegiance to our country, and if not the country, then the
+            citizens of that country—if not the country as it stands, the ideal
+            of the country that lies behind the flag? Well, regardless of
+            whether it’s wrong, it’s certainly not unconstitutional. In
+            <i>West Virginia State Board of Education v. Barnette</i>, the
+            Supreme Court decided that a student cannot be forced to say the
+            Pledge of Allegiance. Justice Jackson wrote, in the majority
+            opinion, that, “If there is any fixed star in our constitutional
+            constellation, it is that no official, high or petty, can prescribe
+            what shall be orthodox in politics, nationalism, religion, or other
+            matters of opinion, or force citizens to confess by word or act
+            their faith therein.” But how can we square orthodoxy with our own
+            opinions? How can we possibly aspire to govern this country well,
+            when the orthodox, majority opinions that are necessarily encoded in
+            the law might go against the opinions of the unorthodox minority?
+            And how can we, as Catholics, behave morally while still ensuring
+            that we do not violate the rights of non-Catholics?
+        </p>
+        <p>
+            The answer is complicated. One of the first laws that was ever
+            passed in this country, the Sedition Act, seems to have the wrong
+            answer: that any person who says anything the government disagrees
+            with can be prosecuted as a result. Passed in 1798, the act was
+            repealed only four years later under the Jefferson administration.
+            And it was Thomas Jefferson, after all, who is remembered as one of
+            the most convincing and forceful advocates of freedom of religion;
+            and in <i>Barnette</i>, freedom of religion was under just as much
+            danger as freedom of speech. Although the Court’s opinion ultimately
+            guaranteed a student’s right to refuse to say the pledge for
+            whatever reason, the student’s impetus for refusing to say the
+            pledge was not political, but religious: as a Jehovah’s Witness,
+            pledging their allegiance to anything other than God was idolatrous.
+        </p>
+        <p>
+            In <i>Barnette</i>, the government had a real interest in forcing
+            students to say the pledge. It increases national cohesion; it
+            inculcates students more effectively into the body of citizens.
+            <i>Barnette</i> was decided on June 14, 1943, a few years into the
+            Second World War—almost a month exactly after the decision was
+            released, Allied forces invaded Sicily; about two weeks after that,
+            Benito Mussolini was arrested. But Justice Jackson and the Court’s
+            majority felt that, “To believe that patriotism will not flourish if
+            patriotic ceremonies are voluntary and spontaneous, instead of a
+            compulsory routine, is to make an unflattering estimate of the
+            appeal of our institutions to free minds.”
+        </p>
+        <p>
+            Similar cases involving religious coercion—which is forbidden by the
+            First Amendment’s Coercion and Establishment Clause, prohibiting
+            making a “law respecting an establishment of religion, or
+            prohibiting the free exercise thereof”—have usually come to similar
+            conclusions. In <i>Sherbert v. Verner</i>, the Court found that
+            South Carolina violated the First Amendment by refusing to give a
+            Seventh-day Adventist woman unemployment compensation, due to her
+            refusing to work on a Saturday; doing so “imposed a significant
+            burden on Sherbert’s ability to freely exercise her faith.”
+            Likewise, in <i>Wisconsin v. Yoder</i>, the Court found that forcing
+            Old Order Amish students to attend conventional secondary school
+            imposed a similar substantive burden on their religious practice;
+            theref.re, the state could not coerce them into abandoning their
+            religion, even if attending secondary school was in the state’s (and
+            arguably the students’) interest.
+        </p>
+        <p>
+            But <i>Burwell v. Hobby Lobby Stores</i> presents a trickier issue:
+            what happens when one litigant (one of the two sides in a trial)
+            claims that their right to religious liberty is violated by a law
+            that tries to guarantee another’s right to religious liberty? In
+            this case, the Greens, who own Hobby Lobby, “believe that providing
+            [contraceptives to their employees through company health insurance]
+            demanded by [the Affordable Care Act and a Health and Human Services
+            provision that requires companies to provide women approved
+            contraceptive methods] is connected to the destruction of an embryo
+            in a way that is sufficient to make it immoral for them to provide
+            the coverage.” In most of the cases we’ve discussed thus far,
+            there’s a clear aggressor and a clear defender: in <i>Barnette</i>,
+            the government is forcing a kid to say the pledge; in
+            <i>Sherbert</i>, South Carolina is trying to take a woman’s
+            unemployment compensation; but in <i>Hobby Lobby</i>, the party that
+            might initially appear to be the aggressor—Hobby Lobby and the
+            Greens—now seems to be the defender: where the government is
+            demanding that they fund procedures that go against their religious
+            beliefs, they merely ask that somebody else administer the coverage.
+        </p>
+        <p>
+            Justice Alito, in the majority opinion that I’ve been quoting thus
+            far, argues that a solution to this conundrum already exists. The
+            Greens’ interest in defending their religious liberty and their
+            employees’ interest in retaining their insurance and the medical
+            care they’re entitled to under the Affordable Care Act are not
+            necessarily mutually exclusive—becuase a mechanism already exists
+            for corporations that cannot countenance funding medical care that
+            goes against their beliefs to opt out and allow their insurers (the
+            companies they employ to deal with their employees’ insurance) to go
+            directly to their employees. Justice Alito writes that, “HHS has
+            already devised and implemented a system that seeks to respect the
+            religious liberty of religious nonprofit corporations while ensuring
+            that the employees of these entities have precisely the same access
+            to all FDA-approved contraceptives as employees of companies whose
+            owners have no religious objections to providing such coverage.” He
+            continues, “We therefore conclude that this system constitutes an
+            alternative that achieves all of the Government’s aims [i.e.
+            providing care] while providing greater respect for religious
+            liberty.”
+        </p>
+        <p>
+            A couple of counterarguments might have sprung up in your mind when
+            I was recounting Alito’s argument. First of all, why does Hobby
+            Lobby have the same rights to religious liberty that a person does?
+            Justice Alito speaks to the “fiction” of corporate personhood;
+            according to him, “A corporation is simply a form of organization
+            used by human beings to achieve desired ends. [...] When rights,
+            whether constitutional or statutory, are extended to corporations,
+            the purpose is to protect the rights of these people.” Consider
+            nonprofit religious organizations. Many (including myself) find that
+            corporate personhood has led to some big judicial missteps, like
+            allowing corporations to spend as much money as they want on
+            political advertisements under the guise of ‘corporate freedom of
+            speech’; but if a corporation wasn’t a person, then your church
+            wouldn’t by default have the same kind of religious freedom and
+            freedom of expression that you have. Your priest would have freedom
+            of speech and freedom of religion, but if he published a message
+            through the parish, then that same right wouldn’t be extended. Thus,
+            Justice Alito’s application of corporate personhood to this case
+            makes some kind of intuitive sense.
+        </p>
+        <p>
+            Another thing that might have sprung up is that you personally
+            disagree with the Greens or the way they run their business. Why
+            should they be allowed to decide what kind of care their employees
+            receive? The first crucial thing is that, like Justice Alito says,
+            “The effect of the HHS-created accommodation of the women employed
+            by Hobby Lobby [...] would be precisely zero. Under that
+            accommodation, these women would still be entitled to all
+            FDA-approved contraceptives without cost sharing.” If we give the
+            Greens the benefit of the doubt and take their argument at face
+            value, they’re not trying to take away their employees’ rights;
+            they’re merely trying to exercise their own rights not to violate
+            their religious conscience. The same way nobody can force you to say
+            the pledge, nobody can stop you from saying the pledge; sure, nobody
+            can tax you and give your money to the church, but nobody can say
+            you can’t give money to your church either.
+        </p>
+        <p>
+            And here we enter historical territory—because what I just said is
+            exactly what Thomas Jefferson said in the Virginia Statute for
+            Religious Freedom: “that to compel a man to furnish contributions of
+            money for the propagation of opinions which he disbelieves, is
+            sinful and tyrannical”. He begins that statute with the following
+            micro-soliloquy: “Where an Almighty God hath created the mind free;
+            that all attempts to influence it by temporal punishments or
+            [burdens], or by civil incapacitations, tend only to beget habits of
+            hypocrisy and meanness, and are a departure from the plan of the
+            Holy author of our religion, who being Lord both of body and mind,
+            yet chose not to propagate it by coercions on either, as it was in
+            his Almighty power to do”. Jefferson points to a pretty fantastic
+            theological argument here, in the midst of all his revolutionary
+            talk of “hypocrisy and meanness”. If God didn’t respect us enough to
+            make us free to find Him, why are we free to deny Him? Indeed,
+            without the chance to deny Christ, what does affirming Him really
+            mean?
+        </p>
+        <p>
+            Miraculously, much like what I said dovetailed with Thomas
+            Jefferson, what Thomas Jefferson said dovetails perfectly with what
+            the Catholic Church said in <i>Dignitatis Humanae</i>, or “of the
+            dignity of the human person”: “It is one of the major tenets of
+            Catholic doctrine that man’s response to God in faith must be free:
+            no one therefore is to be forced to embrace the Christian faith
+            against his own will. [...] The act of faith is of its very nature a
+            free act. Man, redeemed by Christ the Savior and through Christ
+            Jesus called to be God’s adopted son, cannot give his adherence to
+            God revealing Himself unless, under the drawing of the Father, he
+            offers to God the reasonable and free submission of faith.”
+        </p>
+        <p>
+            And isn’t this precisely what we heard Justice Jackson say in
+            <i>Barnette</i>, about how “voluntary and spontaneous” “patriotic
+            ceremonies” are what true patriots must expect? The truth that
+            clearly emerges, in all the texts that we’ve discussed in this
+            article, is that religious belief, much like belief in one’s nation,
+            is spontaneous; it comes from one’s conscience. “Not by force of
+            blows does His rule assert its claims. It is established by
+            witnessing to the truth and by hearing the truth, and it extends its
+            dominion by the love whereby Christ, lifted up on the cross, draws
+            all men to Himself” (<i>Dignitatis Humanae</i>).
+        </p>
+        <p>
+            Would the world be a better place if every child was billowed by the
+            soaring flames of patriotism, their sails full and unfurled, into a
+            recitation that goes beyond “babbl[ing] like the pagans” (Matthew
+            6:7) and enters the “inner room” of one’s soul (Matthew 6:6)? Of
+            course. Would the world be a better place if the light of Christ
+            entered into the world’s darkest corners? Of course. But we must
+            “not wage a war of words aimed at imposing doctrines;” rather, we
+            must “simply spread the love of God”, as Pope Francis compelled us
+            to in <i>Fratelli tutti</i>.
+        </p>
+        <p>
+            Religious liberty, like freedom of speech, endows us with the
+            ability to grow ever closer to our greatest potential not just as
+            people; not just as Catholics; and not just as Americans; but as all
+            three, and as citizens. Using that right correctly means recognizing
+            that our right to conscience exists alongside everybody else’s. We
+            must remember the words of Thomas Jefferson: “truth is great and
+            will prevail if left to herself; [...] she is the proper and
+            sufficient antagonist to error, and has nothing to fear from the
+            conflict, unless by human interpretation disarmed of her spiritual
+            weapons, free argument and debate, errors ceasing to be dangerous
+            when it is permitted freely to contradict them.”
+        </p>
+        <p>
+            So how can we, as Catholics, behave morally while respecting the
+            consciences of others? Not by denying our religion, nor by denying
+            theirs; but by taking up the lantern of truth, and venturing into
+            those neglected corners of dialogue. Because that is how we can
+            teach the truth of the Gospel and “be brought by the grace of Christ
+            and the power of the Holy Spirit to the sublime and unending and
+            ‘glorious freedom of the sons of God’ (Romans 8:21)” (<i
+                >Dignitatis Humanae</i
+            >).
+        </p>
+    </div>
+</body>
